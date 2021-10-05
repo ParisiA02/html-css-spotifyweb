@@ -71,8 +71,6 @@ li.li-navbar{
     margin-left: 20px;
     font-weight: bold;
     font-size: 25px;
-    /* debugging */
-    background-color: red;
 }
 .row .row-title{
     color: white;
@@ -81,6 +79,8 @@ li.li-navbar{
 /* styling songs'box container */
 .row .box-container{
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box-container::after{
@@ -91,9 +91,6 @@ li.li-navbar{
 
 .box-container .box{
     width: calc(100% / 6 - 10px);
-    float: left;
-    /* debugging */
-    background-color: orange;
     margin-right: 10px;
 }
 
