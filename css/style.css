@@ -24,6 +24,7 @@ main .side-bar{
 main .song-container{
     width: calc(100% - 250px);
     height: calc(100vh - 100px);
+    overflow: auto;
     /* debugging */
     background-color: rgb(20, 25, 34);
 }
@@ -33,7 +34,7 @@ main .song-container{
     width: 100%;
     height: 100px;
     opacity: .8;
-    background-color: black;
+    background-color: rgb(8, 11, 18);
 }
 
 /* styling upgrade button */
@@ -43,8 +44,8 @@ main .song-container{
     margin: 30px 10px;
     color: white;
     border: 2px solid white;
-    background-color: black;
     border-radius: 20px;
+    background-color: rgb(8, 11, 18);
 }
 
 /* styling navbar */
@@ -76,6 +77,23 @@ li.li-navbar{
 }
 
 /* styling songs'box container */
+.row .box-container{
+    margin-top: 20px;
+}
+.box-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.box-container .box{
+    float: left;
+    /* debugging */
+    background-color: orange;
+    margin-right: 10px;
+}
+img.img.box-img{
+    
+}
 
 /* styling player */
 .player{
