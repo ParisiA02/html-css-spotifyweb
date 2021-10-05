@@ -52,9 +52,11 @@ main .song-container{
 ul.ul-navbar{
     text-align: center;
 }
+
 ul.ul-navbar :first-child{
     border-bottom: 3px solid rgb(173, 255, 47);
 }
+
 li.li-navbar{
     display: inline-block;
     padding: 10px;
@@ -80,19 +82,58 @@ li.li-navbar{
 .row .box-container{
     margin-top: 20px;
 }
+
 .box-container::after{
     content: "";
     display: table;
     clear: both;
 }
+
 .box-container .box{
+    width: calc(100% / 6 - 10px);
     float: left;
     /* debugging */
     background-color: orange;
     margin-right: 10px;
 }
+
 img.img.box-img{
-    
+    width: 100%;
+}
+
+img.img.box-img.round{
+    border-radius: 50%;
+}
+
+.box-text{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.box-subtitle{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 10px;
+    color: grey;
+}
+
+.second-title{
+    margin-top: 5px;
+    font-size: 10px;
+    color: grey;
+}
+
+/* main responsive part */
+@media all and (max-width: 1250px){
+    .box-container .box{
+        width: calc(100% / 4 - 10px);
+    }
+}
+@media all and (max-width: 600px){
+    .box-container .box{
+        width: calc(100% / 2 - 10px);
+    }
 }
 
 /* styling player */
