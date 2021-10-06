@@ -17,7 +17,7 @@ main .side-bar{
     width: 250px;
     height: calc(100vh - 100px);
     /* debugging */
-    background-color: aqua;
+    background-color: black;
 }
 
 /* styling song-container */
@@ -131,6 +131,76 @@ img.img.box-img.round{
     .box-container .box{
         width: calc(100% / 2 - 10px);
     }
+}
+
+/* stayling sidebar */
+.side-bar .side-bar-container{
+    margin: 20px 0 0 20px;
+    /* debugging */
+    background-color: rebeccapurple;
+}
+
+.side-bar-logo{
+    width: 60%;
+}
+
+/* styling sidebar nav */
+.ul-side-bar{
+    margin-top: 20px;
+    background-color: red;
+}
+
+.li-side-bar{
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.nav-icon{
+    width: 25px;
+    filter: invert(53%) sepia(9%) saturate(14%) hue-rotate(357deg) brightness(93%) contrast(81%);
+}
+
+.ul-playlist{
+    list-style-type: none;
+    overflow: auto;
+}
+.li-playlist{
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* styling sidebar playlist */
+.side-bar-playlist{
+    margin-top: 30px;
+    /* debugging */
+    background-color: blue;
+}
+
+.side-bar-playlist-title{
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+.side-bar-playlist-add{
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.fa-plus-square{
+    font-size: 40px;
+    margin-right: 10px;
 }
 
 /* styling player */
