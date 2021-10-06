@@ -128,7 +128,7 @@ img.img.box-img.round{
         width: calc(100% / 4 - 10px);
     }
 }
-@media all and (max-width: 600px){
+@media all and (max-width: 639px){
     .box-container .box{
         width: calc(100% / 2 - 10px);
     }
@@ -278,46 +278,67 @@ img.img.box-img.round{
     position: relative;
     z-index: 100;
     display: flex;
-    
-    /* debugging */
-    background-color: rebeccapurple;
+    background-color: #404040;
 }
-
-
 
 .left-box{
     height: 100px;
     width: calc(100vw / 4);
-
-    /* debugging */
-    background-color: lightblue;
 }
+
+.player-box.left-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-box img{
+    margin-left: 10px;
+    width: 40px;
+}
+
+.left-box-text{
+    margin: 0 20px 0 10px;
+}
+
+.song-title{
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+.song-autor{
+    font-size: 10px;
+    font-weight: bold;
+    color: grey;
+}
+
+.left-box-icon{
+    color: grey;
+}
+
+.left-box-icon-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .middle-box{
     height: 100px;
     width: calc(100vw / 2);
-
-    /* debugging */
-    background-color: lightseagreen;
 }
 .right-box{
     height: 100px;
     width: calc(100vw / 4);
-
-    /* debugging */
-    background-color: mediumblue;
 }
 .middle-box-top{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    /* debugging */
-    background-color: mediumseagreen;
 }
 .middle-box-bottom{
     height: 50px;
-    /* debugging */
-    background-color: green;
 }
 .middle-box-top :nth-child(3){
     font-size: 30px;
@@ -350,12 +371,14 @@ img.img.box-img.round{
     justify-content: flex-end;
     align-items: center;
 }
+
 .right-box-time{
     margin-right: 5px;
     height: 2px;
     background-color: grey;
     width: 90px;
 }
+
 .right-box-icon{
     color: white;
     margin: 0 5px;
