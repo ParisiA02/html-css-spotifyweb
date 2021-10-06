@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 /* styling container */
@@ -172,7 +173,6 @@ img.img.box-img.round{
 
 .ul-playlist{
     list-style-type: none;
-    overflow: auto;
 }
 .li-playlist{
     color: grey;
@@ -244,6 +244,9 @@ img.img.box-img.round{
 /* styling player */
 .player{
     height: 100px;
+    position: relative;
+    z-index: 100;
+    
     /* debugging */
     background-color: rebeccapurple;
 }
