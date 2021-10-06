@@ -241,16 +241,6 @@ img.img.box-img.round{
     font-weight: bold;
 }
 
-/* styling player */
-.player{
-    height: 100px;
-    position: relative;
-    z-index: 100;
-    
-    /* debugging */
-    background-color: rebeccapurple;
-}
-
 /* responsive sidebar media query */
 
 @media all and (max-width: 600px){
@@ -277,4 +267,96 @@ img.img.box-img.round{
     .smartphone-icon{
         width: 30px;
     }
+    .row{
+        margin-left: 10px;
+    }
+}
+
+/* styling player */
+.player{
+    height: 100px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    
+    /* debugging */
+    background-color: rebeccapurple;
+}
+
+
+
+.left-box{
+    height: 100px;
+    width: calc(100vw / 4);
+
+    /* debugging */
+    background-color: lightblue;
+}
+.middle-box{
+    height: 100px;
+    width: calc(100vw / 2);
+
+    /* debugging */
+    background-color: lightseagreen;
+}
+.right-box{
+    height: 100px;
+    width: calc(100vw / 4);
+
+    /* debugging */
+    background-color: mediumblue;
+}
+.middle-box-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* debugging */
+    background-color: mediumseagreen;
+}
+.middle-box-bottom{
+    height: 50px;
+    /* debugging */
+    background-color: green;
+}
+.middle-box-top :nth-child(3){
+    font-size: 30px;
+}
+.middle-box-top-icon{
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+.middle-box-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-box-bottom .time-bar{
+    height: 2px;
+    width: 60%;
+    background-color: grey;
+}
+.middle-box-bottom .middle-box-time{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    width: 20%;
+    text-align: center;
+}
+
+.right-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right-box-time{
+    margin-right: 5px;
+    height: 2px;
+    background-color: grey;
+    width: 90px;
+}
+.right-box-icon{
+    color: white;
+    margin: 0 5px;
 }
