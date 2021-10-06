@@ -135,9 +135,13 @@ img.img.box-img.round{
 
 /* stayling sidebar */
 .side-bar .side-bar-container{
-    margin: 20px 0 0 20px;
+    height: calc(100vh - 120px);
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* debugging */
-    background-color: rebeccapurple;
+    background-color: green;
 }
 
 .side-bar-logo{
@@ -201,6 +205,40 @@ img.img.box-img.round{
 .fa-plus-square{
     font-size: 40px;
     margin-right: 10px;
+}
+
+.side-bar-user{
+    margin-bottom: 10px;
+}
+
+.install-app{
+    color: grey;
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    padding: 5px 0;
+    display: flex;
+    align-content: center;
+}
+
+.install-app img{
+    margin-right: 5px;
+    width: 20px;
+    filter: invert(53%) sepia(9%) saturate(14%) hue-rotate(357deg) brightness(93%) contrast(81%);
+}
+.user-img-container{
+    display: inline-block;
+    border-radius: 30px;
+    margin-right: 5px;
+    background-color: grey;
+}
+.user img{
+    width: 20px;
+    padding: 2px 3px;
+}
+.user{
+    margin: 10px 0 0 5px;
+    color: white;
+    font-weight: bold;
 }
 
 /* styling player */
