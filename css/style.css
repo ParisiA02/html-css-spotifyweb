@@ -138,9 +138,6 @@ img.img.box-img.round{
 .side-bar .side-bar-container{
     height: calc(100vh - 120px);
     margin: 20px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     /* debugging */
     background-color: green;
 }
@@ -182,6 +179,9 @@ img.img.box-img.round{
 }
 
 /* styling sidebar playlist */
+.side-bar-top{
+    height: calc(100vh - 200px);
+}
 .side-bar-playlist{
     margin-top: 30px;
     /* debugging */
@@ -251,3 +251,30 @@ img.img.box-img.round{
     background-color: rebeccapurple;
 }
 
+/* responsive sidebar media query */
+
+@media all and (max-width: 600px){
+    main .side-bar{
+        width: 50px;
+    }
+    main .song-container{
+        width: calc(100vw - 50px);
+    }
+    .side-bar-container{
+        display: none;
+    }
+    .side-bar-smartphone{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .side-bar-smartphone-top{
+        height: calc(100vh - 180px);
+        margin-top: 5px;
+    }
+    .side-bar-smartphone-bottom :first-child{
+        margin-left: -2px;
+    }
+    .smartphone-icon{
+        width: 30px;
+    }
+}
